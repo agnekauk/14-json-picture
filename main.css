@@ -37,6 +37,9 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #C0C0C099;
+    text-align: center;
+    border-radius: 3px;
 }
 button {
     background-color: rgb(225, 150, 163);

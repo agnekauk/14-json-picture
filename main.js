@@ -15,14 +15,19 @@ async function getData() {
 
     const response = await fetch(request);
     const JSON = await response.json();
-    changedHTML(JSON[rand(JSON.length)]);
+    let objectNumber1 = rand(JSON.length);
+    let objectNumber2 = "";
+    if (objectNumber2 !== objectNumber1) {
+        changedHTML(JSON[objectNumber1]);
+        objectNumber2 = objectNumber1;
+    } else objectNumber1 = rand(JSON.length);
 }
 
 button.addEventListener("click", function (e) {
-    // confetti({
-    //     particleCount: 300,
-    //     spread: 180,
-    //     startVelocity: 60
-    // });
+    confetti({
+        particleCount: 300,
+        spread: 180,
+        startVelocity: 60
+    });
     getData();
 })

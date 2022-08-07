@@ -27,6 +27,7 @@ main {
 img {
     height: 400px;
     overflow: hide;
+    width:100%;
 }
 .text {
     position: absolute;
@@ -38,7 +39,7 @@ img {
     transform: translate(-50%, -50%);
 }
 button {
-    background-color: cornflowerblue;
+    background-color: rgb(225, 150, 163);
     padding: 10px 30px;
     width: auto;
     border-radius: 5px;
@@ -64,6 +65,17 @@ script {
     }
     .picture {
         width: 400px;
+    }
+    img {
+        height: 200px;
+    }
+}
+@media (max-width: 450px) {
+    main {
+        width: 400px;
+    }
+    .picture {
+        width: 350px;
     }
     img {
         height: 200px;

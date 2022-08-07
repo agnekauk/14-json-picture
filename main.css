@@ -32,12 +32,10 @@ img {
     position: absolute;
     width: auto;
     font-size: 18px;
-    color: #000;
-    text-align: center;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    bottom: 20px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 button {
     background-color: cornflowerblue;
@@ -46,7 +44,9 @@ button {
     border-radius: 5px;
     border: none;
 }
-
+script {
+    display: none;
+}
 @media (max-width: 750px) {
     main {
         width: 600px;
@@ -68,10 +68,6 @@ button {
     img {
         height: 200px;
     }
-    .text {
-        width: 350px;
-        margin-left: 25px;
-    }
 }
 @media (max-width: 385px) {
     main {
@@ -82,8 +78,5 @@ button {
     }
     img {
         height: 150px;
-    }
-    .text {
-        width: 250px;
     }
 }
